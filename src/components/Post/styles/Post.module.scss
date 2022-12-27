@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=EB+Garamond:wght@400;500;600;700&display=swap');
+
+.post__container{
+    font-family: 'EB Garamond', serif;
+    position: relative;
+    margin: 1.8rem; 
+
+    .post__title{
+        font-weight: 600;
+        font-size: 1.6rem;
+        margin-block: 2rem;
+    } 
+    .post__date{
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 300;
+        font-size: 0.95rem;
+        color: black;
+    }
+    .post__tag__wrapper{
+        display: flex;
+        flex-direction: row;
+        list-style: square;
+        margin-inline: 0.5rem;
+        padding: 0;
+        border-block: 1.5px black solid;
+    }
+    .post__tag{
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-left: 2rem;
+
+    }
+    .post__content{
+        & :nth-child(1){
+            &:first-letter{
+                color: black;
+                font-size:3rem;
+                font-weight: 500;
+	            margin: 8px;
+	            float:left;
+                
+            }
+        }
+        .post__paragraph{
+            color: rgb(61, 61, 61);
+        }
+    } 
+    .post__sign{
+        font-weight: 600;
+        margin: 3rem 0rem;
+    }  
+}
