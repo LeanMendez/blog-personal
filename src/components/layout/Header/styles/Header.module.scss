@@ -1,0 +1,14 @@
+@import "../../../../index.scss";
+
+.header__container{
+    min-height: min(100%, 6rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-family: $ff-primary;
+    & h1{
+        margin: 2rem 0 0 0;
+        font-size: $sz-text-title
+    }
+}

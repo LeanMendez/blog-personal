@@ -1,0 +1,28 @@
+@import "../../../../index.scss";
+
+
+@media (min-width: $break-large){
+    .nav__container{
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $clr-bg-secondary;
+        color: white;
+    }
+    .nav__bar{
+        padding-top: 5rem ;
+        min-width: 10rem;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1.5rem;
+        & li{
+            list-style: none;
+            font-family: $ff-primary;
+            font-size: $sz-text-section;
+    
+        }
+    }
+}

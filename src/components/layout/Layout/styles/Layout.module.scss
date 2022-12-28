@@ -1,0 +1,61 @@
+@import "../../../../index.scss";
+
+.layout__container{
+    display: grid;
+    min-height: 100vh;
+    background-color: $clr-bg-primary-small;  
+    grid-template-areas: 
+    'header'
+    'content'
+    'footer'
+    ; 
+}
+
+
+
+.layout__nav:nth-child(1){
+    display: none;
+    grid-area: nav;
+}
+
+.layout__header:nth-child(2){
+    grid-area: header;
+}
+
+.layout__content:nth-child(3){
+    grid-area: content;
+}
+
+.layout__footer:nth-child(4){
+    grid-area: footer;
+}
+
+
+@media (min-width: $break-medium){
+    .layout__container{
+        background-color: $clr-bg-primary-medium;  
+        grid-auto-columns: 1fr;
+        grid-template-areas: 
+        'header header footer'
+        'content content footer'
+        ;   
+
+    }
+    .layout__header{
+        max-height: 6rem;
+    }
+}
+
+
+@media (min-width: $break-large){
+    .layout__nav:nth-child(1){
+        display: block;
+    }
+    .layout__container{
+        background-color: $clr-bg-primary-large;
+        grid-template-areas: 
+        'nav header header header footer'
+        'nav content content content footer'
+        ;  
+    }
+}

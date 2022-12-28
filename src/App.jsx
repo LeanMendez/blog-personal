@@ -1,13 +1,14 @@
-import Post from './components/Post/Post';
+import Post from "./components/Post/Post";
+import { Layout } from "./components/layout/Layout";
 
 function App() {
-  
-
   return (
-    <div>
-      <Post />
-    </div>
-  )
+    <>
+      <Layout>
+        <Post />
+      </Layout>
+    </>
+  );
 }
 
-export default App
+export default App;

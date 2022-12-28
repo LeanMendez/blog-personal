@@ -1,0 +1,66 @@
+//IMPORTS
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=EB+Garamond:wght@400;500;600;700&display=swap');
+
+//VARIABLES
+// ------ *** text and fonts variables *** -------
+$ff-primary:'EB Garamond', serif;
+$ff-secondary: 'Cormorant Garamond', serif;
+
+$sz-text-title: 3rem;
+$sz-text-subtitle: 1.6rem;
+$sz-text-content: 1rem;
+$sz-text-section: 1.3rem;
+$sz-text-others: 0.9rem;
+
+// ------ *** colors variables ***   ---------
+$clr-bg-primary-large: #f7c8b8;
+$clr-bg-primary-medium: #80aa80;
+$clr-bg-primary-small:#85c7c7;
+$clr-bg-secondary:black;
+$clr-text-primary:#161616;
+$clr-text-secondary:#3d3d3d;
+
+// ------ *** breakpoints variables *** -------
+$break-small: 30rem;
+$break-medium:40rem;
+$break-large:60rem;
+
+html, body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgb(29, 29, 29);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
